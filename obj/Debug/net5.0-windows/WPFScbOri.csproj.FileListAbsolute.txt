@@ -1,0 +1,94 @@
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.exe
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.deps.json
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.json
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.dev.json
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\ref\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.pdb
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\Hatari Project\WPFWorkshop\WPFScbOri\bin\Debug\net5.0-windows\RestSharp.dll
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\Resource\ResourceDictionary.baml
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_EN.baml
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_TH.baml
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\Views\LoginWindow.baml
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\Views\LoginWindow.g.cs
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\App.g.cs
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.cache
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.lref
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\App.baml
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\Views\MainWindow.baml
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.g.resources
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.AssemblyInfoInputs.cache
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.AssemblyInfo.cs
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.CoreCompileInputs.cache
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.CopyComplete
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\ref\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.pdb
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.genruntimeconfig.cache
+D:\Hatari Project\WPFWorkshop\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csprojAssemblyReference.cache
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.exe
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.deps.json
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.json
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.dev.json
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\ref\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.pdb
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\bin\Debug\net5.0-windows\RestSharp.dll
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\Resource\ResourceDictionary.baml
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_EN.baml
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_TH.baml
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\Views\LoginWindow.baml
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\Views\LoginWindow.g.cs
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\App.g.cs
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.cache
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.lref
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\App.baml
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\Views\MainWindow.baml
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.g.resources
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.AssemblyInfoInputs.cache
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.AssemblyInfo.cs
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.CoreCompileInputs.cache
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.CopyComplete
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\ref\WPFScbOri.dll
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.pdb
+D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.genruntimeconfig.cache
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.exe
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\RestSharp.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Resource\ResourceDictionary.baml
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_EN.baml
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_TH.baml
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Views\LoginWindow.baml
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Components\WelcomeComponent.g.cs
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Views\LoginWindow.g.cs
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\App.g.cs
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.cache
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.lref
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\App.baml
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Components\WelcomeComponent.baml
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Views\MainWindow.baml
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.g.resources
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.GeneratedMSBuildEditorConfig.editorconfig
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.AssemblyInfoInputs.cache
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.AssemblyInfo.cs
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.CoreCompileInputs.cache
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.CopyComplete
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\ref\WPFScbOri.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.pdb
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.deps.json
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.json
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.dev.json
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\ref\WPFScbOri.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.pdb
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.AssemblyReference.cache
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.genruntimeconfig.cache
