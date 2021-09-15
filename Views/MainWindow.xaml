@@ -72,8 +72,8 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" Text="ชื่อ-คุณานนต์ นามสกุล-ละม้ายศรี" Style="{StaticResource LandingTextUserInfo}" />
-                            <TextBlock Grid.Row="1" Text="ID:10000 / BRN:0111" Style="{StaticResource LandingTextUserInfo}" />
+                            <TextBlock Grid.Row="0" x:Name="fullname" Text="" Style="{StaticResource LandingTextUserInfo}" />
+                            <TextBlock Grid.Row="1" x:Name="idBrn" Text="" Style="{StaticResource LandingTextUserInfo}" />
                         </Grid>
                         <Grid Grid.Column="2" Margin="5,0,10,0">
                             <Grid.ColumnDefinitions>
@@ -154,7 +154,7 @@
                         <RowDefinition Height="0.25*" />
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="auto"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
                         <RowDefinition Height="0.4*"/>
                         <RowDefinition Height="0.4*"/>
                     </Grid.RowDefinitions>
@@ -260,15 +260,16 @@
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock Grid.Column="0"
-                                               Margin="20,0,0,0"
+                                               Margin="20,7,0,0"
                                            Text="ชื่อ - นามสกุล : "
                                             Style="{StaticResource SelectFundTextTitleBold}" 
                                             Foreground="Black"
                                         />
-                                    <TextBlock x:Name="CustomerName" Grid.Column="1"
+                                    
+                                    <Label x:Name="CustomerName" Grid.Column="1"
                                                Margin="0,0,10,0"
-                                           Text=""
-                                            Style="{StaticResource SelectFundTextTitleBold}" 
+                                           Content=""
+                                            Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                             Foreground="Black"
 
                                             />
@@ -281,10 +282,10 @@
                                             VerticalAlignment="Center"
                                                />
 
-                                    <TextBlock x:Name="JointAccount" Grid.Column="3"
-                                               Text=""
+                                    <Label x:Name="JointAccount" Grid.Column="3"
+                                               Content=""
                                                Margin="0,0,10,0"
-                                                Style="{StaticResource SelectFundTextTitleBold}" 
+                                                Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                                 Foreground="Black"
                                                VerticalAlignment="Center"
                                             />
@@ -297,10 +298,10 @@
                                                VerticalAlignment="Center"
                                             />
 
-                                    <TextBlock x:Name="SensitiveCustomer" Grid.Column="5"
-                                               Text=""
+                                    <Label x:Name="SensitiveCustomer" Grid.Column="5"
+                                               Content=""
                                                Margin="0,0,0,0"
-                                                Style="{StaticResource SelectFundTextTitleBold}" 
+                                                Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                                 Foreground="Black"
                                                VerticalAlignment="Center"
                                             />
@@ -313,10 +314,10 @@
                                                VerticalAlignment="Center"
                                             />
 
-                                    <TextBlock x:Name="RiskLevel" Grid.Column="7"
-                                               Text=""
+                                    <Label x:Name="RiskLevel" Grid.Column="7"
+                                               Content=""
                                                Margin="0,0,0,0"
-                                                Style="{StaticResource SelectFundTextTitleBold}" 
+                                                Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                                 Foreground="Black"
                                                VerticalAlignment="Center"
                                             />
@@ -339,7 +340,7 @@
 
                     </Grid>
 
-                    <!--แนะนำการลงทุน-->
+                    <!--ผู้แนะนำการลงทุน-->
                     <Grid Grid.Row="2">
                         <Border Grid.Row="0" BorderBrush="#513281"
                                 Background="#ffffff"
@@ -385,7 +386,7 @@
                                             VerticalAlignment="Center"
                                         />
 
-                                        <TextBox
+                                        <TextBox x:Name="StaffId"
                                              Style="{StaticResource TextBoxSearCustomerEntryStyle}"
                                             Width="150"
                                             Height="40"
@@ -400,7 +401,7 @@
                                            Height="30" 
                                            Cursor="Hand"
                                            HorizontalAlignment="Right"
-                                           MouseDown="OpenSearchEmployeeDialog_MouseDownn"
+                                           MouseDown="OpenSearchEmployeeDialog_MouseDown"
                                            />
 
                                     </StackPanel>
@@ -417,10 +418,10 @@
                                                VerticalAlignment="Center"
                                             />
 
-                                        <TextBlock 
-                                               Text="11111"
+                                        <Label x:Name="SecId"
+                                               Content=""
                                                Margin="20,0,10,0"
-                                                Style="{StaticResource SelectFundTextTitleBold}" 
+                                                Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                                 Foreground="Black"
                                                VerticalAlignment="Center"
                                             />
@@ -436,10 +437,10 @@
                                                VerticalAlignment="Center"
                                             />
 
-                                        <TextBlock 
-                                               Text="Kunanon_1"
+                                        <Label x:Name="IcLicense"
+                                               Content=""
                                                Margin="20,0,10,0"
-                                                Style="{StaticResource SelectFundTextTitleBold}" 
+                                                Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                                 Foreground="Black"
                                                VerticalAlignment="Center"
                                             />
@@ -467,10 +468,10 @@
                                             VerticalAlignment="Center"
                                         />
 
-                                        <TextBlock
+                                        <Label x:Name="StaffRm"
                                                Margin="20,0,10,0"
-                                           Text=""
-                                            Style="{StaticResource SelectFundTextTitleBold}" 
+                                           Content=""
+                                            Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                             Foreground="Black"
                                             VerticalAlignment="Center"
                                         />
@@ -489,10 +490,10 @@
                                                VerticalAlignment="Center"
                                             />
 
-                                        <TextBlock 
-                                               Text="นาย คุณานนต์ ละม้ายศรี"
+                                        <Label x:Name="StaffName"
+                                               Content=""
                                                Margin="20,0,10,0"
-                                                Style="{StaticResource SelectFundTextTitleBold}" 
+                                                Style="{StaticResource MainSellFundLabelRegularBlack}" 
                                                 Foreground="Black"
                                                VerticalAlignment="Center"
                                             />
@@ -508,10 +509,10 @@
                                                VerticalAlignment="Center"
                                             />
 
-                                        <ComboBox Grid.Column="1" x:Name="ComboBoxAccount"
+                                        <ComboBox Grid.Column="1" x:Name="ComboBoxOrderBy"
                            VerticalAlignment="Center" Margin="0,0,0,0" Height="35" 
                                               Background="#98d7f8" 
-                                               IsReadOnly="true" ItemsSource="{Binding Account}"
+                                               IsReadOnly="true" ItemsSource="{Binding SearchEmployeeResult}"
                                                IsEditable="False"
                                               Text="Select Account"
                                               Cursor="Hand"
@@ -530,7 +531,7 @@
                                             </ComboBox.ItemContainerStyle>
                                             <ComboBox.ItemTemplate>
                                                 <DataTemplate>
-                                                    <TextBlock Text="{Binding name}"/>
+                                                    <TextBlock Text="{Binding Text}"/>
                                                 </DataTemplate>
                                             </ComboBox.ItemTemplate>
 
@@ -545,7 +546,7 @@
                     </Grid>
 
                     <!--รายการขาย-->
-                    <Grid Grid.Row="3">
+                    <Grid Grid.Row="3" Margin="0,0,0,0">
                         <Border Grid.Row="0" BorderBrush="#513281"
                                 Background="#ffffff"
                                 BorderThickness="2"
@@ -579,73 +580,83 @@
                                         HorizontalAlignment="Right"
                                         Margin="0,15,40,0"
                                         Cursor="Hand"
+                                        Click="OpenSelectedFundDialog_Click"
                                 />
 
-                                <Grid Grid.Row="1" Background="Red" Margin="0,10,0,0">
-                                    <DataGrid RowHeaderWidth="0" AutoGenerateColumns="False" VerticalGridLinesBrush="Transparent" ColumnWidth="*">
-                                        <DataGrid.Resources>
-                                            <!--Set Style Header-->
+                                <!--<Grid Grid.Row="1" Margin="0,10,0,20">
+                                    <DataGrid x:Name="SellFundListGrid" RowHeaderWidth="0" AutoGenerateColumns="False" VerticalGridLinesBrush="Transparent" ColumnWidth="*">
+                                        --><!--<DataGrid.Resources>
+                                            --><!--Set Style Header--><!--
                                             <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                                                 <Setter Property="Background" Value="DeepSkyBlue" />
                                             </Style>
                                             
-                                            <!--Set Style Data-->
+                                            --><!--Set Style Data--><!--
                                             <Style BasedOn="{StaticResource {x:Type DataGridCell}}" TargetType="{x:Type DataGridCell}">
-                                                <Setter Property="Background" Value="Red" />
+                                                <Setter Property="Background" />
                                             </Style>
-                                        </DataGrid.Resources>
+                                        </DataGrid.Resources>--><!--
 
                                         <DataGrid.Columns>
-                                            <!--รหัสกองทุน-->
+                                            --><!--รหัสกองทุน--><!--
                                             <DataGridTemplateColumn Header="รหัสกองทุน" Width="140">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding fundCode}" Margin="29,3,0,0" />
+                                                        <TextBlock Text="{Binding Id}" Margin="29,3,0,0" />
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
 
-                                            <!--ชื่อกองทุน-->
+                                            --><!--ชื่อกองทุน--><!--
                                             <DataGridTemplateColumn Header="ชื่อกองทุน" Width="140">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding fundCode}" Margin="29,3,0,0" />
+                                                        <TextBlock Text="{Binding Name}" Margin="29,3,0,0" />
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
 
-                                            <!--จำนวนหน่วย-->
+                                            --><!--จำนวนหน่วย--><!--
                                             <DataGridTemplateColumn Header="จำนวนหน่วย" Width="140">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding fundCode}" Margin="29,3,0,0" />
+                                                        <TextBlock Text="{Binding Volume, StringFormat='{}{0}.0000'}" Margin="29,3,0,0" />
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
 
-                                            <!--จำนวนบาท-->
+                                            --><!--จำนวนบาท--><!--
                                             <DataGridTemplateColumn Header="จำนวนบาท" Width="140">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding fundCode}" Margin="29,3,0,0" />
+                                                        <TextBlock Text="{Binding Price, StringFormat='{}{0}.0000'}" Margin="29,3,0,0" />
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
 
-                                            <!--จำนวนหน่วยผิดเงื่อนไข-->
+                                            --><!--จำนวนหน่วยผิดเงื่อนไข--><!--
                                             <DataGridTemplateColumn Header="จำนวนหน่วยผิดเงื่อนไข" Width="140">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding fundCode}" Margin="29,3,0,0" />
+                                                        <TextBlock Text="{Binding ErrorVolume, StringFormat='{}{0}.0000'}" Margin="29,3,0,0" />
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
 
-                                            <!--สถานะรายการ-->
+                                            --><!--สถานะรายการ--><!--
                                             <DataGridTemplateColumn Header="สถานะรายการ" Width="140">
                                                 <DataGridTemplateColumn.CellTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Text="{Binding fundCode}" Margin="29,3,0,0" />
+                                                        <TextBlock Text="{Binding Status}" Margin="29,3,0,0" />
+                                                    </DataTemplate>
+                                                </DataGridTemplateColumn.CellTemplate>
+                                            </DataGridTemplateColumn>
+
+                                            --><!--ลบรายการ--><!--
+                                            <DataGridTemplateColumn Header="สถานะรายการ" Width="140">
+                                                <DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <Button Content="ลบ" Tag="{Binding Id}" Margin="29,3,0,0" Click="SellFundButton_Click" />
                                                     </DataTemplate>
                                                 </DataGridTemplateColumn.CellTemplate>
                                             </DataGridTemplateColumn>
@@ -653,7 +664,112 @@
 
                                         </DataGrid.Columns>
                                     </DataGrid>
-                                </Grid>
+                                </Grid>-->
+
+                                <!--DataTemplate-->
+                                <ScrollViewer Grid.Row="2"  VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Visible">
+                                    <Grid Margin="20,50,20,0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0" >
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid Grid.Row="0" Background="#503181" >
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="200" />
+                                                    <ColumnDefinition Width="90"/>
+                                                    <ColumnDefinition Width="90"/>
+                                                    <ColumnDefinition Width="350"/>
+                                                    <ColumnDefinition Width="140" />
+                                                    <ColumnDefinition Width="140"/>
+                                                    <ColumnDefinition Width="140" />
+                                                    <ColumnDefinition Width="90" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Grid.Column="0" Text="รหัสกองทุน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                                <TextBlock Grid.Column="1" Text="ชื่อกองทุน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                                <TextBlock Grid.Column="2" Text="NAV" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                                <TextBlock Grid.Column="3" Text="จำนวนหน่วยคงเหลือ" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                                <TextBlock Grid.Column="4" Text="จำนวนเงิน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                                <TextBlock Grid.Column="5" Text="กำไร/ขาดทุน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                                <TextBlock Grid.Column="6" Text="ready to redeem" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                                <TextBlock Grid.Column="7" Text="" />
+                                            </Grid>
+                                        </Grid>
+
+                                        <ItemsControl x:Name="SellFundListGrid" Grid.Row="1">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid>
+                                                        <Grid.Resources>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="FontSize" Value="17" />
+                                                                <Setter Property="FontWeight" Value="Regular" />
+                                                                <Setter Property="FontFamily" Value="{DynamicResource SarabunRegular}" />
+                                                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                                            </Style>
+                                                        </Grid.Resources>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                        </Grid.RowDefinitions>
+
+                                                        <Grid Grid.Row="0" Background="Transparent">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="200" />
+                                                                <ColumnDefinition Width="90"/>
+                                                                <ColumnDefinition Width="90"/>
+                                                                <ColumnDefinition Width="350"/>
+                                                                <ColumnDefinition Width="140" />
+                                                                <ColumnDefinition Width="140"/>
+                                                                <ColumnDefinition Width="140" />
+                                                                <ColumnDefinition Width="140" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock x:Name="fundCode" Grid.Column="0" Text="{Binding fundCode}" Foreground="Black" />
+                                                            <TextBlock x:Name="fundName" Grid.Column="1"  Text="{Binding fundName}" Foreground="Black" />
+                                                            <TextBlock x:Name="nav" Grid.Column="2" Text="{Binding nav}" Foreground="Black" />
+                                                            <TextBlock x:Name="totalUnit" Grid.Column="3" Text="{Binding totalUnit}" Foreground="Black" />
+                                                            <TextBlock x:Name="totalBaht" Grid.Column="4" Text="{Binding totalBaht}" Foreground="Black" />
+                                                            <TextBlock x:Name="totalGain" Grid.Column="5" Text="{Binding totalGain}" >
+                                                                <TextBlock.Style>
+                                                                    <Style TargetType="{x:Type TextBlock}">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding profitStatus}" Value="True">
+                                                                                <Setter Property="Foreground" Value="Green" />
+                                                                            </DataTrigger>
+                                                                            <DataTrigger Binding="{Binding profitStatus}" Value="False">
+                                                                                <Setter Property="Foreground" Value="Red" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </TextBlock.Style>
+                                                            </TextBlock>
+                                                            <TextBlock x:Name="allowRedeem" Grid.Column="6" Text="{Binding allowRedeem}" Foreground="Black" />
+                                                            <Button Tag="{Binding fundCode}" Grid.Column="7" Content="ขาย" Foreground="Black" Click="OpenFundDetailDialog_Click" />
+                                                        </Grid>
+
+                                                        <Grid.Style>
+                                                            <Style TargetType="{x:Type Grid}">
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsMouseOver" Value="False">
+                                                                        <Setter Property="Background" Value="White"></Setter>
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Background" Value="#DCDCF2"></Setter>
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Grid.Style>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </Grid>
+                                </ScrollViewer>
 
 
                             </Grid>
@@ -664,23 +780,25 @@
 
                     </Grid>
 
-                    <TextBlock Grid.Row="4"
-                               Style="{StaticResource MainOtherSeviceTextBlock}"
-                               Foreground="Black" Text="หมายเหตุ : มูลค่ากองทุนที่แท้จริง เป็นเพียงค่าประมาณเท่านั้น (โดยนำราคาของ BID วันล่าสุดคูณกับจำนวนหน่วยคงเหลือล่าสุดของจำนวนที่....."
-                               VerticalAlignment="Top"
-                               HorizontalAlignment="Left"
-                               Margin="25,15,25,0">
+                        <!--หมายเหตุ-->
+                        <TextBlock Grid.Row="4"
+                                   Style="{StaticResource MainOtherSeviceTextBlock}"
+                                   Foreground="Black" Text="หมายเหตุ : มูลค่ากองทุนที่แท้จริง เป็นเพียงค่าประมาณเท่านั้น (โดยนำราคาของ BID วันล่าสุดคูณกับจำนวนหน่วยคงเหลือล่าสุดของจำนวนที่....."
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Margin="25,15,25,0">
 
-                    </TextBlock>
+                        </TextBlock>
 
-                    <StackPanel Grid.Row="5"
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Top">
-                        <Button Content="พิมพ์" Style="{StaticResource DefaultPurpleButtonStyle}"></Button>
-                        <Button Content="บันทึกข้อมูล" Style="{StaticResource DefaultPurpleButtonStyle}"></Button>
-                        <Button Content="ยกเลิก" Style="{StaticResource DefaultWhiteButtonStyle}"></Button>
-                    </StackPanel>
+                        <!--พิมพ์|บันทึก|ยกเลิก Button-->
+                        <StackPanel Grid.Row="5"
+                                    Orientation="Horizontal"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top">
+                            <Button Content="พิมพ์" Style="{StaticResource DefaultPurpleButtonStyle}"></Button>
+                        <Button Content="บันทึกข้อมูล" Style="{StaticResource DefaultPurpleButtonStyle}" Click="SellFundButton_Click"></Button>
+                            <Button Content="ยกเลิก" Style="{StaticResource DefaultWhiteButtonStyle}"></Button>
+                        </StackPanel>
 
 
                 </Grid>
@@ -703,26 +821,26 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock x:Name="BottomText" Style="{StaticResource MainBottomText}"
-                       Text="{Binding account.id}" TextAlignment="Center"
-                           Margin="0,0,0,0"
-                           />
+                        Text="{Binding account.id}" TextAlignment="Center"
+                            Margin="0,0,0,0"
+                            />
                     <Grid x:Name="BottomTextLine" Visibility="Hidden" Background="#ffffff" Grid.Column="1" VerticalAlignment="Top" Margin="0,-5,0,0" Height="28" Width="1.5" />
                     <TextBlock x:Name="BottomText2" Grid.Column="2" Style="{StaticResource MainBottomText}"
                           
-                       Text="{Binding account.branchCode}" TextAlignment="Center"
-                           Margin="0,0,0,0"
-                           />
+                        Text="{Binding account.branchCode}" TextAlignment="Center"
+                            Margin="0,0,0,0"
+                            />
                     <Grid x:Name="BottomTextLine2" Visibility="Hidden" Background="#ffffff" Grid.Column="3" VerticalAlignment="Top" Margin="0,-5,0,0" Height="28" Width="1.5" />
                     <TextBlock x:Name="BottomText3" Grid.Column="4" Style="{StaticResource MainBottomText}"
                            
-                       Text="V.6.0.4880" TextAlignment="Center"
-                           Margin="0,0,0,0"
-                           />
+                        Text="V.6.0.4880" TextAlignment="Center"
+                            Margin="0,0,0,0"
+                            />
                     <Grid Background="#ffffff" Grid.Column="5" VerticalAlignment="Top" Margin="0,-5,0,0" Height="28" Width="1.5" />
                     <TextBlock x:Name="BottomText4" Grid.Column="6" Style="{StaticResource MainBottomText}"
-                           TextAlignment="Center"
-                           Margin="0,0,0,0"
-                           />
+                            TextAlignment="Center"
+                            Margin="0,0,0,0"
+                            />
                     <Grid Background="#ffffff" Grid.Column="7" VerticalAlignment="Top" Margin="0,-5,0,0" Height="28" Width="1.5" />
                     <Image Width="45" Grid.Column="8" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,-12,0,0" Source="../Images/log in_EN.png" />
                 </Grid>
@@ -730,6 +848,163 @@
             </Grid>
 
 
+        </Grid>
+
+        <!-- SelectFundDialog -->
+        <Grid Grid.Row="1" x:Name="SelectFundDialog" Panel.ZIndex="1" Visibility="Hidden">
+            <StackPanel Grid.Row="0" Width="1920" Height="1080" Background="Black" Opacity="0.5" />
+
+            <Border Grid.Row="0" BorderBrush="Black"
+                                    VerticalAlignment="Top"
+                                    Margin="0,50,0,0"
+                                    BorderThickness="1" CornerRadius="20" Height="740" Width="1200" Background="White">
+                <!--Content-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!--PurpleBar-->
+                    <Border Grid.Row="0" Background="#503181" CornerRadius="15,15,0,0">
+                        <Image HorizontalAlignment="Right" Width="20" Height="20" Source="../Images/close.png" Stretch="Uniform" Margin="10,0,15,0" Cursor="Hand" MouseDown="CloseDialog_MouseDown" />
+                    </Border>
+
+                    <Grid Grid.Row="1" Margin="140,50,0,30" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="130" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Margin="0" VerticalAlignment="Center" Grid.Column="0" Text="กลุ่มกองทุน : " Style="{DynamicResource TextBoxSearchStyle}" />
+
+                        <ComboBox x:Name="ComboBoxFund" 
+                                  Grid.Column="1" 
+                                  Cursor="Hand" 
+                                  Template="{StaticResource ComboBoxSeachCustomerStyle}"
+                                  Width="380" Height="35" 
+                                  ItemsSource="{Binding ListFundGroups}"
+                                  SelectionChanged="ComboBoxFund_SelectionChanged"
+                                  SelectedItem="ทั้งหมด"
+                                  >
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Style="{DynamicResource TextBlockSearchCustomerStyle}" Text="{Binding}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+
+                    </Grid>
+                    <TextBlock x:Name="fundGroupNameDy" Visibility="Hidden"/>
+
+                    <!--DataTemplate-->
+                    <ScrollViewer Grid.Row="2"  VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Visible">
+                        <Grid Margin="20,50,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0" Background="#503181" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200" />
+                                        <ColumnDefinition Width="90"/>
+                                        <ColumnDefinition Width="90"/>
+                                        <ColumnDefinition Width="350"/>
+                                        <ColumnDefinition Width="140" />
+                                        <ColumnDefinition Width="140"/>
+                                        <ColumnDefinition Width="140" />
+                                        <ColumnDefinition Width="90" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="รหัสกองทุน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                    <TextBlock Grid.Column="1" Text="ชื่อกองทุน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                    <TextBlock Grid.Column="2" Text="NAV" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                    <TextBlock Grid.Column="3" Text="จำนวนหน่วยคงเหลือ" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                    <TextBlock Grid.Column="4" Text="จำนวนเงิน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                    <TextBlock Grid.Column="5" Text="กำไร/ขาดทุน" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                    <TextBlock Grid.Column="6" Text="ready to redeem" Style="{DynamicResource TextBlockHeaderStyle}" />
+                                    <TextBlock Grid.Column="7" Text="" />
+                                </Grid>
+                            </Grid>
+
+                            <ItemsControl x:Name="dgFund" Grid.Row="1">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.Resources>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="FontSize" Value="17" />
+                                                    <Setter Property="FontWeight" Value="Regular" />
+                                                    <Setter Property="FontFamily" Value="{DynamicResource SarabunRegular}" />
+                                                    <Setter Property="HorizontalAlignment" Value="Center" />
+                                                    <Setter Property="VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </Grid.Resources>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+
+                                            <Grid Grid.Row="0" Background="Transparent">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="200" />
+                                                    <ColumnDefinition Width="90"/>
+                                                    <ColumnDefinition Width="90"/>
+                                                    <ColumnDefinition Width="350"/>
+                                                    <ColumnDefinition Width="140" />
+                                                    <ColumnDefinition Width="140"/>
+                                                    <ColumnDefinition Width="140" />
+                                                    <ColumnDefinition Width="140" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock x:Name="fundCode" Grid.Column="0" Text="{Binding fundCode}" Foreground="Black" />
+                                                <TextBlock x:Name="fundName" Grid.Column="1"  Text="{Binding fundName}" Foreground="Black" />
+                                                <TextBlock x:Name="nav" Grid.Column="2" Text="{Binding nav}" Foreground="Black" />
+                                                <TextBlock x:Name="totalUnit" Grid.Column="3" Text="{Binding totalUnit}" Foreground="Black" />
+                                                <TextBlock x:Name="totalBaht" Grid.Column="4" Text="{Binding totalBaht}" Foreground="Black" />
+                                                <TextBlock x:Name="totalGain" Grid.Column="5" Text="{Binding totalGain}" >
+                                                    <TextBlock.Style>
+                                                        <Style TargetType="{x:Type TextBlock}">
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding profitStatus}" Value="True">
+                                                                        <Setter Property="Foreground" Value="Green" />
+                                                                    </DataTrigger>
+                                                                <DataTrigger Binding="{Binding profitStatus}" Value="False">
+                                                                    <Setter Property="Foreground" Value="Red" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </TextBlock.Style>
+                                                </TextBlock>
+                                                <TextBlock x:Name="allowRedeem" Grid.Column="6" Text="{Binding allowRedeem}" Foreground="Black" />
+                                                <Button Tag="{Binding fundCode}" Grid.Column="7" Content="ขาย" Foreground="Black" Click="OpenFundDetailDialog_Click" />
+                                            </Grid>
+
+                                            <Grid.Style>
+                                                <Style TargetType="{x:Type Grid}">
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsMouseOver" Value="False">
+                                                            <Setter Property="Background" Value="White"></Setter>
+                                                        </Trigger>
+                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                            <Setter Property="Background" Value="#DCDCF2"></Setter>
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Grid.Style>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </Border>
         </Grid>
 
         <!-- CustomerSellFundDialog -->
@@ -928,6 +1203,12 @@
             </Border>
         </Grid>
 
+        <!-- SellFundMenu -->
+        <Grid x:Name="SellFundMenu" Grid.Row="1" Panel.ZIndex="2" Visibility="Hidden">
+            <!--<StackPanel Grid.Row="0" Width="1920" Height="1080" Background="Black" Opacity="0.5" />-->
+            <Image Source="/Images/graph-19.png" Width="500" Height="500"></Image>
+        </Grid>
+
         <!-- SearchEmployeeDialog -->
         <Grid x:Name="SearchEmployeeDialog" Panel.ZIndex="1" Visibility="Hidden">
             <StackPanel Background="Black" Opacity="0.5" Height="1080" Width="1920" />
@@ -940,7 +1221,7 @@
                         </Grid.RowDefinitions>
 
                         <Border Grid.Row="0" Background="#503181"  CornerRadius="28, 28, 0, 0">
-                            <Image HorizontalAlignment="Right" Width="15" Height="20" Source="/Teller.Passbook;Component/Images/close.png" Stretch="Uniform" Margin="10,0,25,0" Cursor="Hand" MouseDown="CloseDialog_MouseDown" />
+                            <Image HorizontalAlignment="Right" Width="15" Height="20" Source="/Images/close.png" Stretch="Uniform" Margin="10,0,25,0" Cursor="Hand" MouseDown="CloseDialog_MouseDown" />
                         </Border>
 
                         <StackPanel Grid.Row="1">

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFScbOri", "WPFScbOri.csproj", "{E88C1B60-76E6-4C0E-80DC-3A759C71D338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFScbOri", "WPFScbOri.csproj", "{E88C1B60-76E6-4C0E-80DC-3A759C71D338}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

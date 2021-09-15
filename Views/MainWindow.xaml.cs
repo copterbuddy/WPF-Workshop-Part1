@@ -33,6 +33,14 @@ namespace WPFScbOri.Views
         public MainWindow()
         {
             InitializeComponent();
+
+            //Set Info
+            fullname.Text = $"ชื่อ-{AccountManager.Instance.Account.name} นามสกุล-{AccountManager.Instance.Account.surname}";
+            idBrn.Text = $"ID:{AccountManager.Instance.Account.id} / BRN:{AccountManager.Instance.Account.branchCode}";
+
+            BottomText.Text = AccountManager.Instance.Account.id.ToString();
+            BottomText2.Text = AccountManager.Instance.Account.branchCode.ToString();
+            TimerCount();
         }
 
         #region *** Template Member ***
@@ -78,37 +86,37 @@ namespace WPFScbOri.Views
 
         private void CheckIcLicense()
         {
-            //try
-            //{
-            //    string userId = AccountManager.Instance.Account.id.ToString();
-            //    if (!string.IsNullOrEmpty(userId))
-            //    {
-            //        SellFundMainService sellFundMainService = new SellFundMainService();
-            //        SearchEmployeeResult searchEmployee = sellFundMainService.CheckIcLicense(userId);
-            //        if (searchEmployee != null)
-            //        {
-            //            if (searchEmployee.HttpStatus == System.Net.HttpStatusCode.OK)
-            //            {
-            //                if (searchEmployee.IcLicense)
-            //                {
-            //                    StaffId.Text = (searchEmployee.EmpId).ToString();
-            //                    SecId.Content = searchEmployee.SecId;
-            //                    IcLicense.Content = searchEmployee.IcType;
-            //                    StaffRm.Content = searchEmployee.RmId;
-            //                    StaffName.Content = searchEmployee.EmpFirstName + " " + searchEmployee.EmpLastName;
-            //                    ComboBoxOrderBy.ItemsSource = searchEmployee.ListObjective.Select(x => new StringModel()
-            //                    {
-            //                        Text = x
-            //                    }).ToList();
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
-            //catch (Exception)
-            //{
+            try
+            {
+                string userId = AccountManager.Instance.Account.id.ToString();
+                if (!string.IsNullOrEmpty(userId))
+                {
+                    SellFundMainService sellFundMainService = new SellFundMainService();
+                    SearchEmployeeResult searchEmployee = sellFundMainService.CheckIcLicense(userId);
+                    if (searchEmployee != null)
+                    {
+                        if (searchEmployee.HttpStatus == System.Net.HttpStatusCode.OK)
+                        {
+                            if (searchEmployee.IcLicense)
+                            {
+                                StaffId.Text = (searchEmployee.EmpId).ToString();
+                                SecId.Content = searchEmployee.SecId;
+                                IcLicense.Content = searchEmployee.IcType;
+                                StaffRm.Content = searchEmployee.RmId;
+                                StaffName.Content = searchEmployee.EmpFirstName + " " + searchEmployee.EmpLastName;
+                                ComboBoxOrderBy.ItemsSource = searchEmployee.ListObjective.Select(x => new StringModel()
+                                {
+                                    Text = x
+                                }).ToList();
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
 
-            //}
+            }
         }
 
         private void OpenSearchCustomerDialog_MouseDown(object sender, MouseButtonEventArgs e)
@@ -142,7 +150,7 @@ namespace WPFScbOri.Views
         {
             CustomerSellFundDialog.Visibility = Visibility.Hidden;
             SearchEmployeeDialog.Visibility = Visibility.Hidden;
-            //SelectFundDialog.Visibility = Visibility.Hidden;
+            SelectFundDialog.Visibility = Visibility.Hidden;
             FundDetailDialog.Visibility = Visibility.Hidden;
         }
 
@@ -195,10 +203,10 @@ namespace WPFScbOri.Views
 
                     CustomerIdTextBox.Text = (i.CustId).ToString();
                     FundAccountIdTextBox.Text = (i.Branch).ToString();
-                    CustomerName.Text = (i.AccName).ToString();
-                    JointAccount.Text = (i.IsJointAccount).ToString();
-                    SensitiveCustomer.Text = (i.IsSensitive).ToString();
-                    RiskLevel.Text = "5";
+                    CustomerName.Content = (i.AccName).ToString();
+                    JointAccount.Content = (i.IsJointAccount).ToString();
+                    SensitiveCustomer.Content = (i.IsSensitive).ToString();
+                    RiskLevel.Content = "5";
 
                     FundManager.GetInstance().CustAge = (i.Age).ToString();
                     FundManager.GetInstance().CustAccount = (i.CustId).ToString();
@@ -236,77 +244,77 @@ namespace WPFScbOri.Views
 
         private void OpenSelectedFundDialog_Click(object sender, RoutedEventArgs e)
         {
-            //SelectFundDialog.Visibility = Visibility.Visible;
-            //GetFundGroupList();
-            //GetFundList();
+            SelectFundDialog.Visibility = Visibility.Visible;
+            GetFundGroupList();
+            GetFundList();
         }
 
         private void GetFundGroupList()
         {
-            //SelectedFundService selectedFundService = new SelectedFundService();
-            //var ListFundGroups = selectedFundService.GetFundGroupList();
+            SelectedFundService selectedFundService = new SelectedFundService();
+            var ListFundGroups = selectedFundService.GetFundGroupList();
 
-            //if (ListFundGroups.Count > 0)
-            //{
-            //    fundGroupNameDy.Text = "ทั้งหมด";
-            //    ComboBoxFund.ItemsSource = ListFundGroups;
-            //}
+            if (ListFundGroups.Count > 0)
+            {
+                fundGroupNameDy.Text = "ทั้งหมด";
+                ComboBoxFund.ItemsSource = ListFundGroups;
+            }
         }
 
         private void GetFundList()
         {
-            //SelectedFundService selectedFundService = new SelectedFundService();
-            //if ((string)ComboBoxFund.SelectedItem == "ทั้งหมด")
-            //{
-            //    ListFund = selectedFundService.GetFundList();
-            //}
-            //else
-            //{
-            //    ListFund = selectedFundService.GetFundList(FundManager.Instance.CustAccount, (string)ComboBoxFund.SelectedItem, "");
-            //}
+            SelectedFundService selectedFundService = new SelectedFundService();
+            if ((string)ComboBoxFund.SelectedItem == "ทั้งหมด")
+            {
+                ListFund = selectedFundService.GetFundList();
+            }
+            else
+            {
+                ListFund = selectedFundService.GetFundList(FundManager.Instance.CustAccount, (string)ComboBoxFund.SelectedItem, "");
+            }
 
-            //if (ListFund.Count > 0)
-            //{
-            //    for (int i = 0; i < ListFund.Count; i++)
-            //    {
-            //        ListFund[i].totalBaht = Math.Round(ListFund[i].totalBaht, 2, MidpointRounding.AwayFromZero);
-            //        if (ListFund[i].gainAmount >= 0)
-            //        {
-            //            ListFund[i].profitStatus = true;
-            //            ListFund[i].totalGain = "+" + String.Format("{0:#,#.##}", ListFund[i].gainAmount) + " (+" + String.Format("{0:#,#.##}", ListFund[i].gainPercentage) + "%)";
-            //        }
-            //        else
-            //        {
-            //            ListFund[i].profitStatus = false;
-            //            ListFund[i].totalGain = String.Format("{0:#,#.##}", ListFund[i].gainAmount) + " (" + String.Format("{0:#,#.##}", ListFund[i].gainPercentage) + "%)";
-            //        }
-            //    }
-            //    dgFund.ItemsSource = ListFund;
-            //}
+            if (ListFund.Count > 0)
+            {
+                for (int i = 0; i < ListFund.Count; i++)
+                {
+                    ListFund[i].totalBaht = Math.Round(ListFund[i].totalBaht, 2, MidpointRounding.AwayFromZero);
+                    if (ListFund[i].gainAmount >= 0)
+                    {
+                        ListFund[i].profitStatus = true;
+                        ListFund[i].totalGain = "+" + String.Format("{0:#,#.##}", ListFund[i].gainAmount) + " (+" + String.Format("{0:#,#.##}", ListFund[i].gainPercentage) + "%)";
+                    }
+                    else
+                    {
+                        ListFund[i].profitStatus = false;
+                        ListFund[i].totalGain = String.Format("{0:#,#.##}", ListFund[i].gainAmount) + " (" + String.Format("{0:#,#.##}", ListFund[i].gainPercentage) + "%)";
+                    }
+                }
+                dgFund.ItemsSource = ListFund;
+            }
         }
 
         private void ComboBoxFund_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //fundGroupNameDy.Text = (string)ComboBoxFund.SelectedItem;
-            //GetFundList();
+            fundGroupNameDy.Text = (string)ComboBoxFund.SelectedItem;
+            GetFundList();
         }
 
         private void OpenFundDetailDialog_Click(object sender, RoutedEventArgs e)
         {
-            //var fundCode = ((Button)sender).Tag;
-            //for (int i = 0; i < ListFund.Count; i++)
-            //{
-            //    if (fundCode == ListFund[i].fundCode)
-            //    {
-            //        FundManager.GetInstance().Fund = ListFund[i];
-            //        SelectFundDialog.Visibility = Visibility.Hidden;
-            //        FundDetailDialog.Visibility = Visibility.Visible;
-            //        SaleBox.Text = "0";
-            //        SetFundDetail();
-            //        SetSellOption();
-            //        SetAccountOption();
-            //    }
-            //}
+            var fundCode = ((Button)sender).Tag;
+            for (int i = 0; i < ListFund.Count; i++)
+            {
+                if (fundCode == ListFund[i].fundCode)
+                {
+                    FundManager.GetInstance().Fund = ListFund[i];
+                    SelectFundDialog.Visibility = Visibility.Hidden;
+                    FundDetailDialog.Visibility = Visibility.Visible;
+                    SaleBox.Text = "0";
+                    SetFundDetail();
+                    SetSellOption();
+                    SetAccountOption();
+                }
+            }
         }
 
         private void SetFundDetail()
@@ -439,7 +447,7 @@ namespace WPFScbOri.Views
         private void Back_Button_Click(object sender, RoutedEventArgs e)
         {
             FundDetailDialog.Visibility = Visibility.Hidden;
-            //SelectFundDialog.Visibility = Visibility.Visible;
+            SelectFundDialog.Visibility = Visibility.Visible;
         }
 
         private void Close_Button_Click(object sender, RoutedEventArgs e)
@@ -447,7 +455,7 @@ namespace WPFScbOri.Views
             FundManager.GetInstance().Fund = null;
             FundManager.GetInstance().SellFundFact = null;
             FundManager.GetInstance().SellFundFact = null;
-            //SelectFundDialog.Visibility = Visibility.Visible;
+            SelectFundDialog.Visibility = Visibility.Visible;
         }
 
         private void ComboBoxFundChoice2_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -754,7 +762,7 @@ namespace WPFScbOri.Views
                                 Index = y.Index,
                                 IsButtonTable = y.IsButtonTable
                             }).ToList();
-                            //SellFundListGrid.ItemsSource = SellFundList;
+                            SellFundListGrid.ItemsSource = SellFundList;
                         }
                         else
                         {
@@ -778,7 +786,7 @@ namespace WPFScbOri.Views
                                 Index = y.Index,
                                 IsButtonTable = y.IsButtonTable
                             }).ToList();
-                            //SellFundListGrid.ItemsSource = SellFundList;
+                            SellFundListGrid.ItemsSource = SellFundList;
                         }
                     }
                 }
@@ -855,17 +863,18 @@ namespace WPFScbOri.Views
 
         private void SaleBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            //if (SaleBox.Text.IndexOf('.') < 0) {
-            //    SaleBox.Text = SaleBox.Text + ".0000";
-            //}
+            if (SaleBox.Text.IndexOf('.') < 0)
+            {
+                SaleBox.Text = SaleBox.Text + ".0000";
+            }
         }
 
         private void SaleBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            //if (SaleBox.Text.Length >= 6)
-            //{
-            //    SaleBox.Text = (SaleBox.Text).Substring(0, (SaleBox.Text).Length - 5);
-            //}
+            if (SaleBox.Text.Length >= 6)
+            {
+                SaleBox.Text = (SaleBox.Text).Substring(0, (SaleBox.Text).Length - 5);
+            }
         }
 
         private void RadioBut1_Click(object sender, RoutedEventArgs e)
@@ -1086,24 +1095,24 @@ namespace WPFScbOri.Views
 
         private void SellFundButton_Click(object sender, RoutedEventArgs e)
         {
-            //try
-            //{
-            //    string fundId = (((Button)sender).Tag).ToString();
-            //    for (int i = 0; i < SellFundList.Count; i++)
-            //    {
-            //      if (SellFundList[i].Id == fundId)
-            //        {
-            //            SellFundList.RemoveAt(i);
-            //            SellFundListGrid.ItemsSource = SellFundList;
-            //            SellFundListGrid.Items.Refresh();
-            //            break;
-            //        }
-            //    }
-            //}
-            //catch (Exception)
-            //{
+            try
+            {
+                string fundId = (((Button)sender).Tag).ToString();
+                for (int i = 0; i < SellFundList.Count; i++)
+                {
+                    if (SellFundList[i].Id == fundId)
+                    {
+                        SellFundList.RemoveAt(i);
+                        SellFundListGrid.ItemsSource = SellFundList;
+                        SellFundListGrid.Items.Refresh();
+                        break;
+                    }
+                }
+            }
+            catch (Exception)
+            {
 
-            //}
+            }
         }
 
         #endregion
@@ -1111,8 +1120,43 @@ namespace WPFScbOri.Views
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //WelcomeMenu.Visibility = Visibility.Hidden;
-            //SellFundMenu.Visibility = Visibility.Visible;
+            SellFundMenu.Visibility = Visibility.Visible;
             CustomerSellFundDialog.Visibility = Visibility.Visible;
+        }
+        public void TimerCount()
+        {
+            Timer timer = new Timer(100);
+            timer.Elapsed += Timer_Elapsed;
+            timer.Start();
+        }
+
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            try
+            {
+                new Thread(() =>
+                {
+                    Thread.CurrentThread.IsBackground = false;
+                    Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Background, (SendOrPostCallback)delegate
+                    {
+                        try
+                        {
+                            DateTime time = e.SignalTime;
+                            BottomText4.Text = time.ToString("MM/dd/yyyy HH:mm:ss");
+                        }
+                        catch (Exception e)
+                        {
+                            //
+                        }
+                    }, null);
+                }).Start();
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine(error.Message);
+            }
+
+
         }
     }
 }

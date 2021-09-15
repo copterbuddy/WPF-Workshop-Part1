@@ -59,10 +59,6 @@ D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-w
 D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\ref\WPFScbOri.dll
 D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.pdb
 D:\Hatari Project\WPFWorkshop\WPFWorkshop1Prototype\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.genruntimeconfig.cache
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.exe
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.dll
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\RestSharp.dll
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Resource\ResourceDictionary.baml
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_EN.baml
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Resource\Strings_TH.baml
@@ -73,6 +69,15 @@ D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-w
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\App.g.cs
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.cache
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri_MarkupCompile.lref
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.exe
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.deps.json
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.json
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.dev.json
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\ref\WPFScbOri.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.pdb
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\RestSharp.dll
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\App.baml
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Components\WelcomeComponent.baml
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\Views\MainWindow.baml
@@ -85,10 +90,5 @@ D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-w
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.dll
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\ref\WPFScbOri.dll
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.pdb
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.deps.json
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.json
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.runtimeconfig.dev.json
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\ref\WPFScbOri.dll
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\bin\Debug\net5.0-windows\WPFScbOri.pdb
-D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.AssemblyReference.cache
 D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.genruntimeconfig.cache
+D:\myProject\myRepos\21.09.13_WPF_Course_Homework_1\WPFScbOri\obj\Debug\net5.0-windows\WPFScbOri.csproj.AssemblyReference.cache
