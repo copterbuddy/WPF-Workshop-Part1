@@ -820,6 +820,17 @@
         <Setter Property="Margin" Value="20,2" />
     </Style>
 
+    <Style x:Key="TextBlockHeaderStyle2" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily" Value="{DynamicResource SarabunMedium}" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="20,2" />
+    </Style>
+
     <Style x:Key="DialogCancelButton" TargetType="Button">
         <Style.Resources>
             <Style TargetType="Border">
@@ -1219,6 +1230,41 @@
         <Setter Property="Height" Value="47" />
         <Setter Property="Width" Value="155" />
         <Setter Property="FontSize" Value="24" />
+        <Setter Property="Padding" Value="4" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding Foreground}" BorderThickness="{TemplateBinding BorderThickness}" Padding="0" >
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#F7B559" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="LightGray" />
+                <Setter Property="Foreground" Value="White" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="DefaultWhiteButtonOldStyle2" TargetType="Button">
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="8" />
+            </Style>
+        </Style.Resources>
+        <Setter Property="Margin" Value="0,0,0,0" />
+        <Setter Property="FontFamily" Value="{DynamicResource SarabunMedium}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Background" Value="White" />
+        <Setter Property="Foreground" Value="#503181" />
+        <Setter Property="Height" Value="18" />
+        <Setter Property="Width" Value="50" />
+        <Setter Property="FontSize" Value="14" />
         <Setter Property="Padding" Value="4" />
         <Setter Property="Template">
             <Setter.Value>

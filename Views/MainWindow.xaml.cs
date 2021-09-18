@@ -512,6 +512,10 @@ namespace WPFScbOri.Views
 
         private void Confirm_Button_Click(object sender, RoutedEventArgs e)
         {
+
+            LayoutContent2.Visibility = Visibility.Hidden;
+            LayoutContent4.Visibility = Visibility.Hidden;
+
             //Check Same Sale List
             if (FundManager.Instance.ListFundCode != null && FundManager.Instance.ListFundCode.Count > 0)
             {
@@ -837,6 +841,9 @@ namespace WPFScbOri.Views
 
         private void Layout4_Confirm_Button_Click(object sender, RoutedEventArgs e)
         {
+            LayoutContent2.Visibility = Visibility.Hidden;
+            LayoutContent4.Visibility = Visibility.Hidden;
+
             FundDetailDialog.Visibility = Visibility.Hidden;
             SetSellFundTable();
         }
@@ -1119,10 +1126,26 @@ namespace WPFScbOri.Views
 
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //WelcomeMenu.Visibility = Visibility.Hidden;
-            SellFundMenu.Visibility = Visibility.Visible;
-            CustomerSellFundDialog.Visibility = Visibility.Visible;
+            WelcomeMenu.Visibility = Visibility.Hidden;
+            SellFundMenu.Visibility = Visibility.Hidden;
+            OtherServicesMenu.Visibility = Visibility.Visible;
         }
+
+        private void Image_MouseDown_OpenGraph(object sender, MouseButtonEventArgs e)
+        {
+            SellFundMenu.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseDown_CloseGraph(object sender, MouseButtonEventArgs e)
+        {
+            CloseGraph();
+        }
+
+        private void CloseGraph()
+        {
+            SellFundMenu.Visibility = Visibility.Hidden;
+        }
+
         public void TimerCount()
         {
             Timer timer = new Timer(100);
