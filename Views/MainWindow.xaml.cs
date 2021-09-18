@@ -152,6 +152,7 @@ namespace WPFScbOri.Views
             SearchEmployeeDialog.Visibility = Visibility.Hidden;
             SelectFundDialog.Visibility = Visibility.Hidden;
             FundDetailDialog.Visibility = Visibility.Hidden;
+            CloseGraph();
         }
 
         private void SearchCustomerButton_Click(object sender, RoutedEventArgs e)

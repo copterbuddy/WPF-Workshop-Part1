@@ -75,7 +75,7 @@
                             <TextBlock Grid.Row="0" x:Name="fullname" Text="" Style="{StaticResource LandingTextUserInfo}" />
                             <TextBlock Grid.Row="1" x:Name="idBrn" Text="" Style="{StaticResource LandingTextUserInfo}" />
                         </Grid>
-                        <Grid Grid.Column="2" Margin="5,0,10,0">
+                        <Grid Grid.Column="2" Margin="15,0,20,0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="2*" />
                                 <ColumnDefinition Width="0.05*" />
@@ -150,22 +150,16 @@
 
                 <!--Other Services Menu-->
                 <!--<ScrollViewer>-->
-                    <Grid x:Name="OtherServicesMenu" Background="#ffffff" Grid.Row="0" Visibility="Hidden" Margin="0,0,25,15">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="0.25*" />
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="0.4*"/>
-                            <RowDefinition Height="0.4*"/>
-                        </Grid.RowDefinitions>
 
-                        <Grid Background="#F4B45A">
+                <ScrollViewer x:Name="OtherServicesMenu"  VerticalScrollBarVisibility="Auto" Grid.Row="0"  Margin="0,0,25,15" CanContentScroll="True" Visibility="Hidden">
+                    <StackPanel Background="#ffffff">
+
+                    <Grid Background="#F4B45A">
                             <TextBlock Text="ขายกองทุน / Sell Fund" Style="{StaticResource MainOtherSeviceTextBlock}" Foreground="#513281" Margin="10,0"></TextBlock>
                         </Grid>
 
                         <!--ข้อมูลลูกค้า-->
-                        <Grid Grid.Row="1">
+                        <Grid>
                             <Border Grid.Row="0" BorderBrush="#513281"
                                     Background="#ffffff"
                                     BorderThickness="2"
@@ -344,7 +338,7 @@
                         </Grid>
 
                         <!--ผู้แนะนำการลงทุน-->
-                        <Grid Grid.Row="2">
+                        <Grid>
                             <Border Grid.Row="0" BorderBrush="#513281"
                                     Background="#ffffff"
                                     BorderThickness="2"
@@ -550,7 +544,7 @@
                         </Grid>
 
                         <!--รายการขาย-->
-                        <Grid Grid.Row="3" Margin="0,0,0,0">
+                        <Grid Margin="0,0,0,0">
                             <Border Grid.Row="0" BorderBrush="#513281"
                                     Background="#ffffff"
                                     BorderThickness="2"
@@ -588,7 +582,7 @@
                                     />
 
                                     <!--DataTemplate-->
-                                    <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+                                    <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden">
                                         <Grid Margin="20,50,20,20">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="Auto" />
@@ -734,7 +728,8 @@
                         </StackPanel>
 
 
-                    </Grid>
+                    </StackPanel>
+                </ScrollViewer>
                 <!--</ScrollViewer>-->
                 <!-- Bottom Info -->
                 <Grid Grid.Row="1" Height="33" Margin="0,0,-4,0" Width="560" HorizontalAlignment="Right" VerticalAlignment="Bottom">
